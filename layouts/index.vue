@@ -25,17 +25,11 @@
       >
         Pricing
       </v-btn>
-      <nuxt-link v-show="isLoggedIn()" id="toolbarOpenAppButton" :to="{ name: 'servers' }">
-        <v-btn v-show="isLoggedIn()">
+      <a id="toolbarOpenAppButton" :href="loginUri">
+        <v-btn>
           <span class="text-white">{{ $t('header.links.openApp') }}</span>
         </v-btn>
-      </nuxt-link>
-      <v-btn v-show="isLoggedIn()" id="toolbarLogoutButton" @click="handleLogout()">
-        <span>{{ $t('header.links.logout') }}</span>
-      </v-btn>
-      <v-btn v-show="!isLoggedIn()" id="toolbarLoginButton" @click="handleLogin()">
-        <span class="text-white">{{ $t('header.links.login') }}</span>
-      </v-btn>
+      </a>
     </v-app-bar>
 
     <!-- Sizes your content based upon application components -->
@@ -72,18 +66,8 @@ export default Vue.extend({
         duration: 300,
         offset: 0,
         easing: 'easeInOutCubic'
-      }
-    }
-  },
-  methods: {
-    handleLogin () {
-      this.$auth.login()
-    },
-    handleLogout () {
-      this.$auth.logout()
-    },
-    isLoggedIn (): boolean {
-      return this.$auth.loggedIn
+      },
+      loginUri: `${process.env.NUXT_ENV_WEBAPP_URL}/login?passthrough=1`
     }
   }
 })

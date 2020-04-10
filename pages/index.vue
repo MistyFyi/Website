@@ -126,17 +126,6 @@ export default Vue.extend({
   components: {
     MockInterface
   },
-  methods: {
-    handleLogin () {
-      this.$auth.login()
-    },
-    handleLogout () {
-      this.$auth.logout()
-    },
-    isLoggedIn (): boolean {
-      return this.$auth.isAuthenticated()
-    }
-  },
   head () {
     return {
       title: 'Home'

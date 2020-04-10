@@ -51,7 +51,7 @@ export default {
     fallback: true
   },
   head: {
-    titleTemplate: '%s - MapTracker',
+    titleTemplate: '%s - Ikamu',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' }
@@ -68,22 +68,7 @@ export default {
       vueI18n: locale,
       strategy: 'no_prefix'
     }],
-    ['@nuxtjs/pwa', {}],
-    ['@nuxtjs/auth', {
-      redirect: {
-        login: '/',
-        callback: '/callback/',
-        home: '/servers'
-      },
-      strategies: {
-        local: false,
-        auth0: {
-          domain: process.env.NUXT_ENV_OAUTH_CLIENT_DOMAIN,
-          client_id: process.env.NUXT_ENV_OAUTH_CLIENT_ID,
-          audience: process.env.NUXT_ENV_OAUTH_AUDIENCE
-        }
-      }
-    }]
+    ['@nuxtjs/pwa', {}]
   ],
   plugins: [],
   server: {
