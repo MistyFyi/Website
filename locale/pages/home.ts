@@ -5,6 +5,12 @@ export default {
     tagline2: 'Do your favourite online games have maps you love? Ikamu will notify you when your favourite online communities play your favourite maps!',
     taglineImageFallback: 'How does it work?',
     preview: {
+      headers: {
+        server: 'Server',
+        address: 'Address',
+        map: 'Current Map',
+        updated: 'Updated'
+      },
       nameTooltip: 'Easily identify your servers via their ingame title!',
       addressTooltip: 'Quickly identify each server\'s remote address!',
       mapTooltip: 'Immediately see each server\'s current map!',
