@@ -1,0 +1,19 @@
+# dependencies
+node_modules
+
+# build
+.nuxt
+dist
+OneSignalSDK*
+sw.*
+static/sw.js
+
+# yarn
+yarn-error.log
+
+# temp files
+test/e2e/screenshots
+
+# config
+docker-compose.yml
+.DS_Store
