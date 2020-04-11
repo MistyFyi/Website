@@ -79,7 +79,7 @@ export default Vue.extend({
         offset: -64,
         easing: 'easeInOutCubic'
       },
-      loginUri: `${process.env.NUXT_ENV_WEBAPP_URL}/login?passthrough=1`
+      loginUri: `${process.env.NUXT_ENV_WEBAPP_URL}?passthrough=1`
     }
   }
 })

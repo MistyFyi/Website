@@ -2,7 +2,7 @@ export default {
   about: {
     title: 'Ikamu',
     tagline1: 'A new way to connect with your favourite video game servers',
-    tagline2: 'Ikamu.io is the easiest way of receiving real-time updates on the status your favourite community game servers.',
+    tagline2: 'Ikamu.io is the easiest way of receiving real-time updates on the status of your favourite community game servers.',
     tagline3: 'Push notifications are available to help you never miss your favourite maps again!',
     taglineImageFallback: 'How does it work?',
     preview: {
