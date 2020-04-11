@@ -51,7 +51,7 @@ export default {
     fallback: true
   },
   head: {
-    titleTemplate: '%s - Ikamu',
+    titleTemplate: 'Ikamu.io',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' }
@@ -60,7 +60,7 @@ export default {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Saira+Semi+Condensed&display=swap' }
     ]
   },
-  mode: 'spa',
+  mode: 'universal',
   modules: [
     ['nuxt-i18n', {
       locales: ['en'],

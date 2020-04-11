@@ -1,8 +1,9 @@
 export default {
   about: {
     title: 'Ikamu',
-    tagline1: 'It\'s time to scrap the Steam server browser!',
-    tagline2: 'Do your favourite online games have maps you love? Ikamu will notify you when your favourite online communities play your favourite maps!',
+    tagline1: 'A new way to connect with your favourite video game servers',
+    tagline2: 'Ikamu.io is the easiest way of receiving real-time updates on the status your favourite community game servers.',
+    tagline3: 'Push notifications are available to help you never miss your favourite maps again!',
     taglineImageFallback: 'How does it work?',
     preview: {
       headers: {
@@ -22,27 +23,28 @@ export default {
   features: {
     title: 'Features',
     feature1: {
-      paragraph1: 'Never miss a map again! Play only the maps you love, in the places you love.',
-      paragraph2: 'Near-realtime notifications pushed to your device when your favourite games servers switch to maps you love.',
-      paragraph3: 'We track your favourite server\'s history so you can decide where to play next'
+      paragraph1: 'Forget the Steam server browser; view your favourite game servers wherever you are!',
+      paragraph2: 'View your favourite game server\s recent history; decide where to play next.',
+      paragraph3: 'Near-realtime notifications pushed to your device when your favourite servers start playing your favourite maps.',
+      paragraph4: 'See a recent timetime spanning all your game servers; a current view of your favourite online communities!'
     },
     feature2: {
-      paragraph1: 'All popular Steam server browser games are supported, including but not limited to Counterstrike: Global Offensive, Garry\'s Mod, Counterstrike: Source &amp; Killing Floor.',
-      paragraph2: 'Is your favorite game not supported? Please make a request and we\'ll endeavour to add it to our service.',
-      paragraph3: 'Desktop and Android browsers supported. Mobile & desktop apps are coming soon.'
+      paragraph1: 'Popular Steam server browser games are supported, including but not limited to Counterstrike: Global Offensive, Garry\'s Mod, Counterstrike: Source.',
+      paragraph2: 'Is your favorite game not supported/not working? Please make a request through the website and we\'ll endeavour to add it to our service.',
+      paragraph3: 'Desktop (Chrome/Chromium-based browsers, Firefox, Edge) and Chrome for Android supported. Mobile & desktop apps are coming soon.'
     }
   },
   pricing: {
     title: 'Pricing',
-    strapline: 'You can enjoy Ikamu\'s features for free, but if you\'d like to support the project directly please consider becoming a Donator. You\'ll receive plenty of benefits.',
-    notice: 'All money received will go towards improving this service.',
+    strapline: 'You can enjoy Ikamu.io\'s features for free, but if you\'d like to support the project directly please consider becoming a Paid Tier member. You\'ll receive plenty of benefits. Trials are also available on request.',
+    notice: 'Ikamu.io is not currently a for-profit service. Donations received will go exclusively towards hosting costs.',
     free: {
-      title: 'Free',
+      title: 'Free Tier',
       feature1: 'Monitor up to 3 game servers concurrently',
-      feature2: 'Watch for up to 3 specific map/level names across watched game servers'
+      feature2: 'Watch for up to 5 specific map/level names across watched game servers'
     },
     paid: {
-      title: 'Donator (coming soon...)',
+      title: 'Paid Tier (available upon request)',
       feature1: 'Monitor up to 20 game servers concurrently',
       feature2: 'Watch for up to 50 specific map/level names across watched game servers',
       feature3: 'Wildcard map/level name watching support (e.g. de_dust* will match de_dust and de_dust2)'

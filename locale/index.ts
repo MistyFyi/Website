@@ -7,13 +7,11 @@ export default {
       app_title: 'Ikamu',
       header: {
         links: {
-          login: 'Log in/Register',
-          logout: 'Log out',
-          openApp: 'Go to app'
+          openApp: 'Open App'
         }
       },
       footer: {
-        description: ' is a dedicated game server map rotation tracker.',
+        description: ' is a dedicated game server monitoring service.',
         owner: 'A project by '
       },
       home

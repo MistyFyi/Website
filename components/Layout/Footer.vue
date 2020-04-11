@@ -3,6 +3,7 @@
     class="text-center"
     cols="12"
   >
+    {{ $t('app_title') }}.io{{ $t('footer.description') }}
     <span class="attribution">{{ $t('footer.owner') }}
       <a rel="noopener noreferrer" target="blank" href="https://www.galaco.me">
         Galaco</a> - <strong>&copy;2019-{{ currentYear }}</strong>

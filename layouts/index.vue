@@ -5,31 +5,44 @@
       flat
       color="rgba(0,0,0,0)"
     >
-      <v-toolbar-title>
-        <nuxt-link :to="{ name: 'index' }">
-          <BrandLogo light />
-        </nuxt-link>
-      </v-toolbar-title>
-      <!-- -->
+      <v-row
+        align="center"
+        justify="center"
+      >
+        <v-col cols="7">
+          <v-toolbar-title>
+            <BrandLogo light :click="() => $vuetify.goTo(0, options)" />
+            <v-btn
+              text
+              color="white"
+              @click="$vuetify.goTo('#section-features', options)"
+            >
+              Features
+            </v-btn>
+            <v-btn
+              text
+              color="white"
+              @click="$vuetify.goTo('#section-pricing', options)"
+            >
+              Pricing
+            </v-btn>
+          </v-toolbar-title>
+        </v-col>
+        <v-col
+          cols="3"
+          align="right"
+          justify="right"
+        >
+          <!-- -->
 
-      <v-spacer />
-      <v-btn
-        text
-        @click="$vuetify.goTo('#section-features', options)"
-      >
-        Features
-      </v-btn>
-      <v-btn
-        text
-        @click="$vuetify.goTo('#section-pricing', options)"
-      >
-        Pricing
-      </v-btn>
-      <a id="toolbarOpenAppButton" :href="loginUri">
-        <v-btn>
-          <span class="text-white">{{ $t('header.links.openApp') }}</span>
-        </v-btn>
-      </a>
+          <v-spacer />
+          <a id="toolbarOpenAppButton" :href="loginUri">
+            <v-btn>
+              <span class="text-white">{{ $t('header.links.openApp') }}</span>
+            </v-btn>
+          </a>
+        </v-col>
+      </v-row>
     </v-app-bar>
 
     <!-- Sizes your content based upon application components -->
@@ -41,7 +54,6 @@
     <v-footer
       app
       dark
-      absolute
     >
       <!-- -->
       <Footer />
@@ -64,7 +76,7 @@ export default Vue.extend({
     return {
       options: {
         duration: 300,
-        offset: 0,
+        offset: -64,
         easing: 'easeInOutCubic'
       },
       loginUri: `${process.env.NUXT_ENV_WEBAPP_URL}/login?passthrough=1`
