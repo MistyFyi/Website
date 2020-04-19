@@ -202,7 +202,7 @@ export default Vue.extend({
   }
 
   .background-gradient {
-    background: linear-gradient(270deg, #424242, #212121);
+    background: linear-gradient(270deg, #1494e1,  	#4588d2);
     background-size: 400% 400%;
     -webkit-animation: AnimationName 30s ease infinite;
     -moz-animation: AnimationName 30s ease infinite;

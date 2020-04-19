@@ -29,13 +29,13 @@ export default Vue.extend({
   .navbar-brand {
         color: #efefef;
         text-decoration: none;
+        cursor: pointer;
 
         &:hover, &:visited {
           color: #efefef;
         }
 
         .navbar-brand-title {
-            vertical-align: middle;
             font-family: 'Saira Semi Condensed', sans-serif;
             font-size: 24px;
             margin-left: 16px;
@@ -46,7 +46,6 @@ export default Vue.extend({
 
         .navbar-brand-icon {
             font-size: 20px;
-            color: #fb7e14;
             height: 40px;
             width: 40px;
             border-radius: 5px;
@@ -68,7 +67,6 @@ export default Vue.extend({
         &:hover {
             .navbar-brand-icon {
                 background-color: #4d4d4d;
-                color: rgb(255, 150, 24);
             }
 
             .navbar-brand-title {

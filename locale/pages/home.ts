@@ -8,16 +8,16 @@ export default {
     preview: {
       headers: {
         server: 'Server',
-        address: 'Address',
         map: 'Current Map',
-        updated: 'Updated'
+        game: 'Game',
+        players: 'Players',
+        updated: 'Last Changed'
       },
-      nameTooltip: 'Easily identify your servers via their ingame title!',
-      addressTooltip: 'Quickly identify each server\'s remote address!',
+      nameTooltip: 'Identify your servers via their ingame title!',
+      gameTooltip: 'Automatic tagging of game',
       mapTooltip: 'Immediately see each server\'s current map!',
-      dateTooltip: 'know immediately how recently each server changed map!',
-      historyTooltip: 'Your favourite recent server\'s history is tracked!',
-      deleteTooltip: 'Easily manage your servers!'
+      playersTooltip: 'View current player populations on map change!',
+      dateTooltip: 'Know immediately how recently a server changed map!'
     }
   },
   features: {
@@ -36,7 +36,7 @@ export default {
   },
   pricing: {
     title: 'Pricing',
-    strapline: 'You can enjoy Ikamu.io\'s features for free, but if you\'d like to support the project directly please consider becoming a Paid Tier member. You\'ll receive plenty of benefits. Trials are also available on request.',
+    strapline: 'You can enjoy Ikamu.io\'s features for free, but if you\'d like to support the project directly please consider contacting us about becoming a Paid Tier member. You\'ll receive plenty of benefits. Trials are also available on request.',
     notice: 'Ikamu.io is not currently a for-profit service. Donations received will go exclusively towards hosting costs.',
     free: {
       title: 'Free Tier',

@@ -6,10 +6,10 @@
           <thead>
             <tr>
               <th>{{ $t('home.about.preview.headers.server') }}</th>
-              <th>{{ $t('home.about.preview.headers.address') }}</th>
               <th>{{ $t('home.about.preview.headers.map') }}</th>
+              <th>{{ $t('home.about.preview.headers.game') }}</th>
+              <th>{{ $t('home.about.preview.headers.players') }}</th>
               <th>{{ $t('home.about.preview.headers.updated') }}</th>
-              <th />
             </tr>
           </thead>
           <tbody>
@@ -40,25 +40,32 @@ export default Vue.extend({
     return {
       servers: [
         {
-          ip_address: '192.168.0.1',
-          port: '27015',
-          name: 'Counterstrike: Source',
+          name: 'Community dust2 Casual',
           current_map: 'de_dust2',
-          last_updated: 'Updated 1 hour ago'
+          game: 'Counterstrike: Global Offensive',
+          players: '10/12',
+          last_updated: '3 minutes ago'
         },
         {
-          ip_address: '127.0.0.1',
-          port: '27017',
-          name: 'Counterstrike: Global Offensive',
-          current_map: 'de_nuke',
-          last_updated: 'Updated 5 minute ago'
+          name: 'ikamu.io #1 custom map ONLY',
+          current_map: 'one_4_nine',
+          game: 'Left 4 Dead 2',
+          players: '3/8',
+          last_updated: '5 seconds ago'
         },
         {
-          ip_address: '255.255.255.0',
-          port: '27015',
-          name: 'Killing Floor #1',
-          current_map: 'kf_london',
-          last_updated: 'Updated 5 seconds ago'
+          name: 'CSS buddiesHangout 24/7 Zombie Escape',
+          current_map: 'ze_bioshock_v7_1',
+          game: 'Counterstrike: Source',
+          players: '64/64',
+          last_updated: '1 hour ago'
+        },
+        {
+          name: 'Ikamu.io TF2 24/7 Payload!',
+          current_map: 'pl_upwards',
+          game: 'Team Fortress 2',
+          players: '29/32',
+          last_updated: '30 seconds ago'
         }
       ]
     }
